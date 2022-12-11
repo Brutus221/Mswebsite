@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS PERFORMANCE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <section class="sub-header">
+<nav>
+   <a href="index.html"><img src="Images/logo3.png"></a> 
+   <div class="nav-links" id="navLinks">
+    <i class="fa fa-times" onclick="hideMenu()"></i>
+    <ul>
+        <li><a href="index.html">HOME</a> </li>
+        <li><a href="About.html">ABOUT</a> </li>
+        <li><a href="Contact.html">CONTACT</a> </li>
+        <li><a href="Product.html">PRODUCT</a> </li>
+        <li><a href="Form.html">QUOTATION</a> </li>
+        
+    </ul>
+   </div>
+   <i class="fa fa-bars" onclick="showMenu()"></i>
+   <!-------------------JAVASCRIPT Toggle Menu----------------------------------->
+   <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+navLinks.style.right = "0";
+    }
+    function hideMenu(){
+navLinks.style.right = "-200px";
+    }
+</script>
+   
+</nav>
+<h1>About Us</h1>
+
+    </section>
+    <!------------------------About u content------------------------------>
+    <section class="about-us">
+<div class="row">
+    <div class="about-col">
+<h1>We are the best mechanic in south africa and a member of RMI </h1>
+<p>Our company offers a vierity of services such a panel beating,and fixing of your cars, regular car servicig and also quality style of making your car more customized very well.</p>   
+<a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+</div>
+    <div class="about-col">
+      <img src="Images/auto-mechanic-working-garage-repair-service-scaled.jpg" >
+    </div>
+</div>
+    </section>
+    
+    <!---------------Footer------------------>
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>With nearly a decade of experience in the automotive industry, Ms Performance Services has attested to be an effective and reliable partner in the automotive sector .
+
+            <br>Our goal and success has been primarily based on optimising client requirements to create commercial value for the client.Our fundamental principal seeks to drive <br> client loyalty ultimately reducing procurement and transactional cost which leads to improving our client relationships.</p>
+            <div class="icons">
+                <i class="fa fa-facebook-official"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-twitter"></i>
+            </div>
+            <p>
+                © 2021, Ms Performance. All rights reserved
+            </p>
+    </section>
+</body>
+</html>

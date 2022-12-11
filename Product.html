@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS PERFORMANCE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <section class="sub-header">
+<nav>
+   <a href="index.html"><img src="Images/logo3.png"></a> 
+   <div class="nav-links" id="navLinks">
+    <i class="fa fa-times" onclick="hideMenu()"></i>
+    <ul>
+        <li><a href="index.html">HOME</a> </li>
+        <li><a href="About.html">ABOUT</a> </li>
+        <li><a href="Contact.html">CONTACT</a> </li>
+        <li><a href="Product.html">PRODUCT</a> </li>
+        <li><a href="Form.html">QUOTATION</a> </li>
+        
+    </ul>
+   </div>
+   <i class="fa fa-bars" onclick="showMenu()"></i>
+   <!-------------------JAVASCRIPT Toggle Menu----------------------------------->
+   <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+navLinks.style.right = "0";
+    }
+    function hideMenu(){
+navLinks.style.right = "-200px";
+    }
+</script>
+   
+</nav>
+<h1>OUR SERVICES</h1>
+
+    </section>
+      <!--------------------- Products ------------------------------------>
+      <section class="Product">
+        <p>We offer a wide variety of services for a range of vehicles.<br> Part of our guarantee to you,<br> in services and maintenance is that we keep the old parts that we have replaced and only get rid of them after you have seen it.</p>
+  <div class="row">
+    <div class="Product-col">
+        <i class="fa fa-wrench"></i>
+        <h3> Safety Brakes & Skimming</h3>
+        <p>Skimming removes the “wear” lip created by repeated braking
+            The disk contact surface is cleaned from rust, <br> dust and other particles that may cause damage to the brake system
+            All friction material and debris that may be embedded into the disk is safely removed with skimming
+            Noticeable improvement in brake efficiency after skimming of the disks</p>
+    </div>
+    <div class="Product-col">
+        <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+        <h3> Engine & GearBox Overhauls</h3>
+        <p>Regular maintenance and upkeep are key to ensuring the longevity of your vehicle's engine.<br>
+        consistent clutch & gearbox repairs facility offers equipment to electronically test your vehicle's gearbox, as well as its valve bodies.</p>
+    </div>
+    <div class="Product-col">
+        <i class="fa fa-car" ></i>
+        <h3> Panel Beating Services</h3>
+        <p>Minor and major panelbeating repairs to all vehicle types.Our range of car spray paint and 
+            car paints will help you get a perfect finish every time<br>
+            Professional car paint scratch repair, scuffs, dents or chips on bodywork or bumpers.
+        </p>
+    </div>
+  </div>
+    </section>
+
+    <!-- The video -->
+    <section class="video">
+        <div class="row">
+        <div class="content">
+            <h1>What We Do</h1>
+            <p>Watch a Mini Video Demonstration of our services, With More Exprerienced Personnels at Ms Performance.</p>
+            <!-- Use a button to pause/play the video with JavaScript -->
+            <button id="myBtn" onclick="myFunction()">Pause</button>
+          </div>
+<div class="content">
+<video autoplay muted loop id="myVideo">
+    <source src="Video/Mechanic video.mp4" type="video/mp4">
+  </video>
+  </div>
+  </div>
+
+  
+  <script>
+    // Get the video
+    var video = document.getElementById("myVideo");
+    
+    // Get the button
+    var btn = document.getElementById("myBtn");
+    
+    // Pause and play the video section
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+    </script>
+    </section>
+    
+    <!---------------Footer------------------>
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>With nearly a decade of experience in the automotive industry, Ms Performance, Services has attested to be an effective and reliable partner in the automotive sector .
+
+            <br>Our goal and success has been primarily based on optimising client requirements to create commercial value for the client.Our fundamental principal seeks to drive <br> client loyalty ultimately reducing procurement and transactional cost which leads to improving our client relationships.</p>
+            <div class="icons">
+                <i class="fa fa-facebook-official"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-twitter"></i>
+            </div>
+            <p>
+                © 2021, Ms Performance. All rights reserved
+            </p>
+    </section>
+</body>
+</html>
